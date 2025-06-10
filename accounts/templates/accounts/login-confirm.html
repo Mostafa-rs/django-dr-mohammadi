@@ -1,0 +1,30 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'accounts/css/login.css' %}">
+{% endblock %}
+
+{% block title %}
+    ورود | ثبت نام
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="container login">
+
+        <form action="" class="col-md-3 login-form" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="inputPassword5" class="form-label">کد تایید</label>
+                <input autofocus type="text" name="otp"
+                       maxlength="6" id="inputPassword5" class="form-control" autocomplete="off">
+            </div>
+
+            <input type="submit" value="تایید" class="btn btn-success">
+        </form>
+
+    </div>
+
+{% endblock %}

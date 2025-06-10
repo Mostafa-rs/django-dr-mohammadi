@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}{% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'bootstrap-5.3.2-dist/css/bootstrap.rtl.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/_base.css' %}">
+    {% block css %}{% endblock %}
+</head>
+<body>
+
+{% include 'incs/messages.html' %}
+{% include 'incs/nav.html' %}
+
+<div class="main-content">
+    {% block content %}
+    {% endblock %}
+</div>
+
+<script src="{% static 'bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/_base.js' %}"></script>
+
+{% block js %}{% endblock %}
+
+</body>
+</html>

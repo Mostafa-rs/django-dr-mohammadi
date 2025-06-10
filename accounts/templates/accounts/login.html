@@ -1,0 +1,34 @@
+{% extends '_base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'accounts/css/login.css' %}">
+{% endblock %}
+
+{% block title %}
+    ورود | ثبت نام
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="container login">
+
+        <form action="" class="col-md-3 login-form" method="post">
+            {% csrf_token %}
+
+            {% if form.phone.errors %}
+            <p style="color: red">{{ form.phone.errors }}</p>
+            {% endif %}
+
+            <div>
+                <label for="inputPassword5" class="form-label">شماره همراه</label>
+                <input type="text" maxlength="11" name="phone" id="inputPassword5" class="form-control" autocomplete="off" autofocus>
+            </div>
+
+            <input type="submit" value="ورود | ثبت نام" class="btn btn-primary">
+        </form>
+
+    </div>
+
+{% endblock %}

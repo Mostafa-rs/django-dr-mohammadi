@@ -1,0 +1,42 @@
+@font-face {
+  font-family: yekan;
+  src: url('../fonts/yekan/Yekan.eot');
+  src: url('../fonts/yekan/Yekan.eot?#iefix') format('FontName-opentype'),
+       url('../fonts/yekan/Yekan.woff') format('woff'),
+       url('../fonts/yekan/Yekan.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url('../fonts/vazir/vazir.eot');
+  src: url('../fonts/vazir/vazir.eot?#iefix') format('FontName-opentype'),
+       url('../fonts/vazir/vazir.woff') format('woff'),
+       url('../fonts/vazir/vazir.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+    font-family: vazir;
+}
+
+.main-content {
+    font-family: yekan;
+}
+
+input:focus {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.navbar {
+    color: #ffffff !important;
+}
+#msg {
+    z-index: 100;
+    position:fixed;
+    top: 10%;
+    width: fit-content;
+}

@@ -1,0 +1,26 @@
+.login {
+    border: 1px solid #c2c2c2;
+    width: 40%;
+    margin-top: 10%;
+    border-radius: 10px;
+}
+
+.login-form {
+    margin: 10% auto;
+    width: 50%;
+    /*background-color: red;*/
+    text-align: center;
+}
+
+.login-form div input {
+    direction: ltr;
+    font-family: vazir;
+}
+
+.login-form div {
+    margin-bottom: 10%;
+}
+
+.errorlist li {
+    color: #c20000;
+}
